@@ -1,5 +1,6 @@
 # Learn X as Y
 
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.com/learnxasy/learnxasy.github.io.svg?branch=develop)](https://travis-ci.com/learnxasy/learnxasy.github.io)
 
 [**Learn X as Y**](https://learnxasy.github.io) is a open education platform for hosting resources for contextualized learning. Each person has a different way
@@ -34,3 +35,8 @@ WIP
 # License
 
 MIT
+=======
+[![Build Status](https://travis-ci.com/learnxasy/learnxasy.github.io.svg?branch=master)](https://travis-ci.com/learnxasy/learnxasy.github.io)
+
+WIP
+>>>>>>> develop
