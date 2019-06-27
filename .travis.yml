@@ -15,6 +15,8 @@ deploy:
   keep-history: true
   on:
     branch: master
+before_install:
+  - git set-url origin git@github.com:learnxasy/learnxasy.github.io.git
 install:
   - npm install
 script:
