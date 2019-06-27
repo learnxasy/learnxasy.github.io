@@ -20,3 +20,7 @@ language*—a specific way of writing instructions (sometimes refered to as *cod
 that a computer can understand. There are hundreds of different programming languages, 
 all with their own pros and cons. In this course, we will be using a language called 
 [Kotlin](https://kotlinlang.org).
+
+Below is some Kotlin code. Press the green Play button to see what it does!
+
+<kotlin-playground src="uXckW_C1-"></kotlin-playground>

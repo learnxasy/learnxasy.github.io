@@ -1,4 +1,5 @@
 import React from "react";
+import css from "@emotion/css";
 
 const KotlinPlayground = ({ src, height }) => (
   <iframe 
@@ -6,9 +7,7 @@ const KotlinPlayground = ({ src, height }) => (
     height={ height || 180} 
     width="100%" 
     src={ src.startsWith("http") ? src : `https://pl.kotl.in/${src}?theme=darcula`} 
-    scrolling="no" 
-    frameborder="no" 
-    allowtransparency="true"
+    css={css`border: none;`}
   >
   </iframe>
 );
