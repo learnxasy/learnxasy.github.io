@@ -1,7 +1,9 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import { css } from "@emotion/core";
+
 import Layout from "../components/layout";
+import renderAst from "../components/renderAst";
 
 export default ({ data: { markdownRemark: context } }) => (
   <Layout x={context.fields.learn} y={context.fields.as}>
@@ -12,9 +14,7 @@ export default ({ data: { markdownRemark: context } }) => (
       `}
     >
       <h1>Lesson {context.frontmatter.lessonNumber}: {context.frontmatter.title}</h1>
-      <div 
-        dangerouslySetInnerHTML={{ __html: context.html }} 
-      />
+      <div>{renderAst(context.htmlAst)}</div>
     </div>
   </Layout>
 );
@@ -22,7 +22,7 @@ export default ({ data: { markdownRemark: context } }) => (
 export const query = graphql`
   query($learn: String!, $as: String!, $lesson: String!) {
     markdownRemark(fields: { learn: { eq: $learn }, as: { eq: $as }, lesson: { eq: $lesson } }) {      
-      html
+      htmlAst
       frontmatter {
         title
         lessonNumber
