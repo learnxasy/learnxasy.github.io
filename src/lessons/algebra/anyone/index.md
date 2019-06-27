@@ -1,0 +1,1 @@
+This course is meant to be a gentle introduction to algebra.
